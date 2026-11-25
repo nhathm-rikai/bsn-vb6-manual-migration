@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Forms\Common\FrmGNKKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Common\FrmGPKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Common\FrmKYKKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Common\FrmMAKKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Common\FrmSYOKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Common\FrmTAIKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Common\FrmTANKEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0040.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0041.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0042.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0110.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Master\FrmKUNO0160.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Uriage\FrmKSHO0115.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Uriage\FrmKTBO0020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Uriage\FrmKTBO0021.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Zaiko\FrmKZKO0010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Zaiko\FrmKZKO0020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Zaiko\FrmKZKO0030.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
