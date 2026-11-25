@@ -7,7 +7,7 @@ using KousyoERP.Common;
 namespace KousyoERP.Forms.Master;
 
 /// <summary>
-/// KUNO0020 â€” å•†å“åˆ†é¡žãƒžã‚¹ã‚¿ç™»éŒ² (VB6 frmKUNO0020 1:1 ç§»è¡Œç”»é¢)
+/// KUNO0020 — 商品分類マスタ登録 (VB6 frmKUNO0020 1:1 移行画面)
 /// </summary>
 public partial class FrmKUNO0020 : Form
 {
@@ -15,16 +15,16 @@ public partial class FrmKUNO0020 : Form
 
     private readonly IKuno0020Service _service;
 
-    // ãƒ•ã‚©ãƒ¼ãƒ å†…çŠ¶æ…‹å¤‰æ•° (VB6 frmKUNO0020 ã¨åŒä¸€)
+    // フォーム内状態変数 (VB6 frmKUNO0020 と同一)
     private int _upflg;       // 0 = INSERT, 1 = UPDATE
-    private int _noflg;       // 0 = å¤§åˆ†é¡žæœªå­˜åœ¨/æœªç¢ºèª, 1 = å¤§åˆ†é¡žå­˜åœ¨ç¢ºèªæ¸ˆ
+    private int _noflg;       // 0 = 大分類未存在/未確認, 1 = 大分類存在確認済
     private string _sStrName = string.Empty;
     private int _sWbcd;
     private string _sStrSrt = string.Empty;
     private string _sStrSrt2 = string.Empty;
     private string _sStrTekyo = string.Empty;
     private string _sStrDdate = string.Empty;
-    private int _sKkb;        // 0 = æœˆæœ«ç· åˆ‡(opt31), 1 = ï¼’ï¼æ—¥ç· åˆ‡(opt20)
+    private int _sKkb;        // 0 = 月末締切(opt31), 1 = ２０日締切(opt20)
 
     private bool _suppressFocusEvents;
     private bool _validationFailedInLeave;
@@ -109,14 +109,14 @@ public partial class FrmKUNO0020 : Form
             return;
         }
 
-        // ã‚·ã‚¹ãƒ†ãƒ æ—¥ä»˜è¨­å®š (yy/mm/dd)
+        // システム日付設定 (yy/mm/dd)
         lblYMD.Text = DateTime.Now.ToString("yy/MM/dd", CultureInfo.InvariantCulture);
 
-        // ãƒœã‚¿ãƒ³ç„¡åŠ¹
+        // ボタン無効
         cmdSET.Enabled = false;
         cmdDEL.Enabled = false;
 
-        // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨­å®š
+        // デフォルト設定
         opt31.Checked = true;
         _sKkb = 0;
 
@@ -124,7 +124,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  ç”»é¢å†…å®¹ã‚¯ãƒªã‚¢ (DATA_CLEAR)
+    //  画面内容クリア (DATA_CLEAR)
     // **********************************
     private void DataClear()
     {
@@ -141,11 +141,11 @@ public partial class FrmKUNO0020 : Form
             txtTEKYO.Text = string.Empty;
             txtSRT2.Text = string.Empty;
 
-            // ãƒœã‚¿ãƒ³ç„¡åŠ¹
+            // ボタン無効
             cmdSET.Enabled = false;
             cmdDEL.Enabled = false;
 
-            // ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨­å®š
+            // デフォルト設定
             opt31.Checked = true;
             _sKkb = 0;
 
@@ -158,14 +158,14 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  ãƒ‡ãƒ¼ã‚¿è¡¨ç¤º (DATA_HYOJI)
+    //  データ表示 (DATA_HYOJI)
     // **********************************
     private void DataHyoji()
     {
-        // æ›´æ–°ç™»éŒ²ãƒ•ãƒ©ã‚°(0 = INSERT, 1 = UPDATE)
+        // 更新登録フラグ(0 = INSERT, 1 = UPDATE)
         _upflg = 0;
 
-        // å¤§ãƒ»ä¸­åˆ†é¡žã‚³ãƒ¼ãƒ‰å…¥åŠ›æ™‚ãƒã‚§ãƒƒã‚¯
+        // 大・中分類コード入力時チェック
         if (string.IsNullOrWhiteSpace(txtTCD.Text) || string.IsNullOrWhiteSpace(txtDCD.Text))
         {
             cmdSET.Enabled = false;
@@ -173,13 +173,13 @@ public partial class FrmKUNO0020 : Form
             return;
         }
 
-        _upflg = 1; // ãƒ‡ãƒ¼ã‚¿ä¿®æ­£
+        _upflg = 1; // データ修正
 
-        // å‰Šé™¤å¯¾è±¡ãƒ‡ãƒ¼ã‚¿åˆ¤åˆ¥
+        // 削除対象データ判別
         if (!string.IsNullOrWhiteSpace(_sStrDdate))
         {
             DialogResult ret = MessageBox.Show(
-                "ã“ã®ãƒ¬ã‚³ãƒ¼ãƒ‰ã¯å‰Šé™¤ã•ã‚Œã¦ã„ã¾ã™ã€‚å¾©å…ƒã—ã¾ã™ã‹ï¼Ÿ",
+                "このレコードは削除されています。復元しますか？",
                 ScreenTitle,
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
@@ -191,7 +191,7 @@ public partial class FrmKUNO0020 : Form
             }
         }
 
-        // ãƒ†ã‚­ã‚¹ãƒˆå€¤è¨­å®š
+        // テキスト値設定
         txtDTNM.Text = _sStrName;
         txtBCD.Text = _sWbcd.ToString("00", CultureInfo.InvariantCulture);
         if ((int)LegacyTextHelper.VbVal(txtBCD.Text) == 0)
@@ -213,11 +213,11 @@ public partial class FrmKUNO0020 : Form
         txtTEKYO.Text = _sStrTekyo;
         txtSRT2.Text = _sStrSrt2;
 
-        // ãƒœã‚¿ãƒ³æœ‰åŠ¹
+        // ボタン有効
         cmdSET.Enabled = true;
         cmdDEL.Enabled = true;
 
-        // çµŒç†ç· åˆ‡æ—¥åŒºåˆ†è¨­å®š
+        // 経理締切日区分設定
         if (_sKkb == 0)
         {
             opt31.Checked = true;
@@ -229,7 +229,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  å•†å“åˆ†é¡žãƒžã‚¹ã‚¿å­˜åœ¨ãƒã‚§ãƒƒã‚¯ (kmbnri_check)
+    //  商品分類マスタ存在チェック (kmbnri_check)
     // **********************************
     private bool KmbnriCheck(int daiCd, int tyuCd)
     {
@@ -247,7 +247,7 @@ public partial class FrmKUNO0020 : Form
         }
         catch (Exception ex)
         {
-            LegacyErrorDialog.ShowSqlError(ScreenTitle, "å•†å“åˆ†é¡žãƒžã‚¹ã‚¿", $"{daiCd},{tyuCd}", ex);
+            LegacyErrorDialog.ShowSqlError(ScreenTitle, "商品分類マスタ", $"{daiCd},{tyuCd}", ex);
             Close();
             return false;
         }
@@ -261,7 +261,7 @@ public partial class FrmKUNO0020 : Form
         }
         catch (Exception ex)
         {
-            LegacyErrorDialog.ShowSqlError(ScreenTitle, "åç§°ãƒžã‚¹ã‚¿", $"4,{bmCd}", ex);
+            LegacyErrorDialog.ShowSqlError(ScreenTitle, "名称マスタ", $"4,{bmCd}", ex);
             bumonName = string.Empty;
             Close();
             return false;
@@ -298,7 +298,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  KeyPress å…±é€šãƒ•ã‚£ãƒ«ã‚¿
+    //  KeyPress 共通フィルタ
     // **********************************
     private static void DigitsOnly_KeyPress(object? sender, KeyPressEventArgs e)
     {
@@ -323,7 +323,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  txtDCD ã‚¤ãƒ™ãƒ³ãƒˆ
+    //  txtDCD イベント
     // **********************************
     private void txtDCD_GotFocus(object? sender, EventArgs e)
     {
@@ -359,7 +359,7 @@ public partial class FrmKUNO0020 : Form
 
         txtDCD.Text = daiVal.ToString("00", CultureInfo.InvariantCulture);
 
-        // å¤§åˆ†é¡ž(ä¸­åˆ†é¡ž00)å­˜åœ¨ãƒã‚§ãƒƒã‚¯
+        // 大分類(中分類00)存在チェック
         if (!KmbnriCheck(daiVal, 0))
         {
             if (IsDisposed) return;
@@ -403,7 +403,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  txtTCD ã‚¤ãƒ™ãƒ³ãƒˆ
+    //  txtTCD イベント
     // **********************************
     private void txtTCD_GotFocus(object? sender, EventArgs e)
     {
@@ -432,12 +432,12 @@ public partial class FrmKUNO0020 : Form
 
         int tyuVal = (int)LegacyTextHelper.VbVal(txtTCD.Text.Trim());
 
-        // å¤§åˆ†é¡žæœªç™»éŒ²æ™‚ã¯ä¸­åˆ†é¡ž00ä»¥å¤–ä¸å¯
+        // 大分類未登録時は中分類00以外不可
         if (_noflg == 0 && tyuVal != 0)
         {
             _validationFailedInLeave = true;
             MessageBox.Show(
-                "å¤§åˆ†é¡žã‚³ãƒ¼ãƒ‰ï¼ˆä¸­åˆ†é¡žã‚³ãƒ¼ãƒ‰00ï¼‰ã‚’ç™»éŒ²ã—ã¦ãã ã•ã„ã€‚",
+                "大分類コード（中分類コード00）を登録してください。",
                 ScreenTitle,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -450,7 +450,7 @@ public partial class FrmKUNO0020 : Form
             return;
         }
 
-        // ç·¨é›†è¡¨ç¤º (VB6: Format$(Trim$(txtTCD), "00") -> ç©ºæ–‡å­—æ™‚ã¯ "")
+        // 編集表示 (VB6: Format$(Trim$(txtTCD), "00") -> 空文字時は "")
         string trimmedTcd = txtTCD.Text.Trim();
         txtTCD.Text = string.IsNullOrEmpty(trimmedTcd)
             ? string.Empty
@@ -458,7 +458,7 @@ public partial class FrmKUNO0020 : Form
 
         int daiVal = (int)LegacyTextHelper.VbVal(txtDCD.Text);
 
-        // å…¥åŠ›ãƒã‚§ãƒƒã‚¯: å¤§åˆ†é¡ž(00)å­˜åœ¨ç¢ºèª
+        // 入力チェック: 大分類(00)存在確認
         if (!KmbnriCheck(daiVal, 0))
         {
             if (IsDisposed) return;
@@ -483,7 +483,7 @@ public partial class FrmKUNO0020 : Form
             return;
         }
 
-        // å…¥åŠ›ãƒã‚§ãƒƒã‚¯: æŒ‡å®šã•ã‚ŒãŸå¤§åˆ†é¡žãƒ»ä¸­åˆ†é¡žã®å­˜åœ¨ç¢ºèª
+        // 入力チェック: 指定された大分類・中分類の存在確認
         int currentTyuVal = (int)LegacyTextHelper.VbVal(txtTCD.Text);
         if (!KmbnriCheck(daiVal, currentTyuVal))
         {
@@ -503,13 +503,13 @@ public partial class FrmKUNO0020 : Form
             return;
         }
 
-        // ãƒ‡ãƒ¼ã‚¿è¡¨ç¤º
+        // データ表示
         _noflg = 1;
         DataHyoji();
     }
 
     // **********************************
-    //  txtDTNM ã‚¤ãƒ™ãƒ³ãƒˆ
+    //  txtDTNM イベント
     // **********************************
     private void txtDTNM_KeyDown(object? sender, KeyEventArgs e)
     {
@@ -533,7 +533,7 @@ public partial class FrmKUNO0020 : Form
         {
             _validationFailedInLeave = true;
             MessageBox.Show(
-                "æ–‡å­—æ•°ã‚ªãƒ¼ãƒãƒ¼ã§ã™ã€‚",
+                "文字数オーバーです。",
                 ScreenTitle,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Exclamation);
@@ -542,7 +542,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  txtBCD ã‚¤ãƒ™ãƒ³ãƒˆ
+    //  txtBCD イベント
     // **********************************
     private void txtBCD_KeyDown(object? sender, KeyEventArgs e)
     {
@@ -579,7 +579,7 @@ public partial class FrmKUNO0020 : Form
 
             _validationFailedInLeave = true;
             MessageBox.Show(
-                "æŒ‡å®šã•ã‚ŒãŸéƒ¨é–€ã‚³ãƒ¼ãƒ‰ã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚",
+                "指定された部門コードは存在しません。",
                 ScreenTitle,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -594,7 +594,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  txtSRT / txtTEKYO / txtSRT2 ã‚¤ãƒ™ãƒ³ãƒˆ
+    //  txtSRT / txtTEKYO / txtSRT2 イベント
     // **********************************
     private void txtSRT_KeyDown(object? sender, KeyEventArgs e)
     {
@@ -646,7 +646,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  opt31 / opt20 ã‚¤ãƒ™ãƒ³ãƒˆ
+    //  opt31 / opt20 イベント
     // **********************************
     private void opt31_CheckedChanged(object? sender, EventArgs e)
     {
@@ -681,7 +681,7 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  ãƒžã‚¹ã‚¿ç™»éŒ²ãƒ»æ›´æ–° (cmdSET_Click)
+    //  マスタ登録・更新 (cmdSET_Click)
     // **********************************
     private void cmdSET_Click(object? sender, EventArgs e)
     {
@@ -720,13 +720,13 @@ public partial class FrmKUNO0020 : Form
         }
         catch (Exception ex)
         {
-            LegacyErrorDialog.ShowSqlError(ScreenTitle, "å•†å“åˆ†é¡žãƒžã‚¹ã‚¿", $"{txtDCD.Text},{txtTCD.Text}", ex);
+            LegacyErrorDialog.ShowSqlError(ScreenTitle, "商品分類マスタ", $"{txtDCD.Text},{txtTCD.Text}", ex);
             Close();
         }
     }
 
     // **********************************
-    //  ã‚­ãƒ£ãƒ³ã‚»ãƒ« (cmdCAN_Click)
+    //  キャンセル (cmdCAN_Click)
     // **********************************
     private void cmdCAN_Click(object? sender, EventArgs e)
     {
@@ -735,14 +735,14 @@ public partial class FrmKUNO0020 : Form
     }
 
     // **********************************
-    //  å‰Šé™¤å‡¦ç† (cmdDEL_Click)
+    //  削除処理 (cmdDEL_Click)
     // **********************************
     private void cmdDEL_Click(object? sender, EventArgs e)
     {
         if (_validationFailedInLeave) return;
 
         DialogResult confirm = MessageBox.Show(
-            "å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ",
+            "削除しますか？",
             ScreenTitle,
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Question);
@@ -770,13 +770,13 @@ public partial class FrmKUNO0020 : Form
         }
         catch (Exception ex)
         {
-            LegacyErrorDialog.ShowSqlError(ScreenTitle, "å•†å“åˆ†é¡žãƒžã‚¹ã‚¿", $"{txtDCD.Text},{txtTCD.Text}", ex);
+            LegacyErrorDialog.ShowSqlError(ScreenTitle, "商品分類マスタ", $"{txtDCD.Text},{txtTCD.Text}", ex);
             Close();
         }
     }
 
     // **********************************
-    //  å‡¦ç†çµ‚äº† (cmdEND_Click)
+    //  処理終了 (cmdEND_Click)
     // **********************************
     private void cmdEND_Click(object? sender, EventArgs e)
     {

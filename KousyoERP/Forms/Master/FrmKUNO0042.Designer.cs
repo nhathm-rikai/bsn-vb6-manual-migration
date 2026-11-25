@@ -165,7 +165,7 @@ partial class FrmKUNO0042
         cmdGCD1.Size = new System.Drawing.Size(20, 23);
         cmdGCD1.TabIndex = 29;
         cmdGCD1.TabStop = false;
-        cmdGCD1.Text = "...";
+        cmdGCD1.Text = "";
         cmdGCD1.UseVisualStyleBackColor = false;
         cmdGCD1.Click += cmdGCD1_Click;
         // 
@@ -308,7 +308,7 @@ partial class FrmKUNO0042
         cmdGCD2.Size = new System.Drawing.Size(20, 23);
         cmdGCD2.TabIndex = 30;
         cmdGCD2.TabStop = false;
-        cmdGCD2.Text = "...";
+        cmdGCD2.Text = "";
         cmdGCD2.UseVisualStyleBackColor = false;
         cmdGCD2.Click += cmdGCD2_Click;
         // 

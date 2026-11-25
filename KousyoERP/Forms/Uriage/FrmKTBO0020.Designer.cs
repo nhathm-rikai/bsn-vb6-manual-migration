@@ -221,7 +221,7 @@ partial class FrmKTBO0020
         cmdSEEKHAN.Name = "cmdSEEKHAN";
         cmdSEEKHAN.Size = new System.Drawing.Size(22, 25);
         cmdSEEKHAN.TabIndex = 2;
-        cmdSEEKHAN.Text = "...";
+        cmdSEEKHAN.Text = "";
         cmdSEEKHAN.UseVisualStyleBackColor = false;
         cmdSEEKHAN.Click += cmdSEEKHAN_Click;
 
@@ -262,7 +262,7 @@ partial class FrmKTBO0020
         cmdSEEKTAN.Name = "cmdSEEKTAN";
         cmdSEEKTAN.Size = new System.Drawing.Size(22, 25);
         cmdSEEKTAN.TabIndex = 4;
-        cmdSEEKTAN.Text = "...";
+        cmdSEEKTAN.Text = "";
         cmdSEEKTAN.UseVisualStyleBackColor = false;
         cmdSEEKTAN.Click += cmdSEEKTAN_Click;
 
@@ -364,7 +364,7 @@ partial class FrmKTBO0020
         cmdSEEKSYO.Name = "cmdSEEKSYO";
         cmdSEEKSYO.Size = new System.Drawing.Size(22, 25);
         cmdSEEKSYO.TabIndex = 8;
-        cmdSEEKSYO.Text = "...";
+        cmdSEEKSYO.Text = "";
         cmdSEEKSYO.UseVisualStyleBackColor = false;
         cmdSEEKSYO.Click += cmdSEEKSYO_Click;
 

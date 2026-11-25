@@ -54,3 +54,4 @@ C:\Users\thuan.mai\VB.Net\KousyoERP\KousyoERP\obj\Debug\net8.0-windows\KousyoERP
 C:\Users\thuan.mai\VB.Net\KousyoERP\KousyoERP\obj\Debug\net8.0-windows\KousyoERP.Forms.Master.FrmKUNO0041.resources
 C:\Users\thuan.mai\VB.Net\KousyoERP\KousyoERP\obj\Debug\net8.0-windows\KousyoERP.Forms.Master.FrmKUNO0042.resources
 C:\Users\thuan.mai\VB.Net\KousyoERP\KousyoERP\obj\Debug\net8.0-windows\KousyoERP.Forms.Master.FrmKUNO0110.resources
+C:\Users\thuan.mai\VB.Net\KousyoERP\KousyoERP\obj\Debug\net8.0-windows\KousyoERP.sourcelink.json

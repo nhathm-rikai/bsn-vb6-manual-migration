@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d0AeyafHw18=",
+  "dgSpecHash": "F+ktaYxPVP8=",
   "success": true,
-  "projectFilePath": "c:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\KousyoERP.csproj",
+  "projectFilePath": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\KousyoERP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thuan.mai\\.nuget\\packages\\dapper\\2.1.89\\dapper.2.1.89.nupkg.sha512",
     "C:\\Users\\thuan.mai\\.nuget\\packages\\oracle.manageddataaccess.core\\23.26.400\\oracle.manageddataaccess.core.23.26.400.nupkg.sha512",

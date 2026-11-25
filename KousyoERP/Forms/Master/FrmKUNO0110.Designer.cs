@@ -103,7 +103,7 @@ partial class FrmKUNO0110
         // Header
         Label19.BackColor = bg;
         Label19.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 128);
-        Label19.Location = new System.Drawing.Point(232, 8);
+        Label19.Location = new System.Drawing.Point(248, 8);
         Label19.Name = "Label19";
         Label19.Size = new System.Drawing.Size(185, 25);
         Label19.TabIndex = 28;
@@ -111,7 +111,7 @@ partial class FrmKUNO0110
 
         lblYMD.BackColor = bg;
         lblYMD.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 128);
-        lblYMD.Location = new System.Drawing.Point(496, 8);
+        lblYMD.Location = new System.Drawing.Point(544, 8);
         lblYMD.Name = "lblYMD";
         lblYMD.Size = new System.Drawing.Size(97, 21);
         lblYMD.TabIndex = 0;
@@ -121,7 +121,7 @@ partial class FrmKUNO0110
         Frame1.Font = font12;
         Frame1.Location = new System.Drawing.Point(8, 40);
         Frame1.Name = "Frame1";
-        Frame1.Size = new System.Drawing.Size(609, 217);
+        Frame1.Size = new System.Drawing.Size(656, 217);
         Frame1.TabIndex = 1;
         Frame1.TabStop = false;
         Frame1.Text = "名称情報の選択";
@@ -136,33 +136,33 @@ partial class FrmKUNO0110
         });
 
         // Row 1 (y = 32)
-        ConfigureOption(opt1, "opt1", "ブロック情報1桁", 16, 32, 145, 2, 1, font12, bg);
-        ConfigureOption(opt2, "opt2", "主管情報2桁", 152, 32, 130, 3, 2, font12, bg);
-        ConfigureOption(opt3, "opt3", "部課名情報2桁", 296, 32, 136, 4, 3, font12, bg);
-        ConfigureOption(opt4, "opt4", "部門情報2桁", 440, 32, 140, 5, 4, font12, bg);
+        ConfigureOption(opt1, "opt1", "ブロック情報1桁", 12, 32, 156, 2, 1, font12, bg);
+        ConfigureOption(opt2, "opt2", "主管情報2桁", 172, 32, 152, 3, 2, font12, bg);
+        ConfigureOption(opt3, "opt3", "部課名情報2桁", 328, 32, 150, 4, 3, font12, bg);
+        ConfigureOption(opt4, "opt4", "部門情報2桁", 482, 32, 166, 5, 4, font12, bg);
 
         // Row 2 (y = 64)
-        ConfigureOption(opt5, "opt5", "身分情報2桁", 16, 64, 136, 6, 5, font12, bg);
-        ConfigureOption(opt6, "opt6", "職名情報2桁", 152, 64, 130, 7, 6, font12, bg);
-        ConfigureOption(opt7, "opt7", "続柄情報2桁", 296, 64, 136, 8, 7, font12, bg);
-        ConfigureOption(opt8, "opt8", "所属区分情報１桁", 440, 64, 160, 9, 8, font12, bg);
+        ConfigureOption(opt5, "opt5", "身分情報2桁", 12, 64, 156, 6, 5, font12, bg);
+        ConfigureOption(opt6, "opt6", "職名情報2桁", 172, 64, 152, 7, 6, font12, bg);
+        ConfigureOption(opt7, "opt7", "続柄情報2桁", 328, 64, 150, 8, 7, font12, bg);
+        ConfigureOption(opt8, "opt8", "所属区分情報１桁", 482, 64, 166, 9, 8, font12, bg);
 
         // Row 3 (y = 96)
-        ConfigureOption(opt9, "opt9", "メーカー情報4桁", 16, 96, 150, 10, 9, font12, bg);
+        ConfigureOption(opt9, "opt9", "メーカー情報4桁", 12, 96, 156, 10, 9, font12, bg);
 
         // Row 4 (y = 128)
-        ConfigureOption(opt10, "opt10", "用途情報2桁", 16, 128, 130, 11, 10, font12, bg);
-        ConfigureOption(opt11, "opt11", "燃料種類情報1桁", 152, 128, 144, 12, 11, font12, bg);
-        ConfigureOption(opt12, "opt12", "石油元売情報2桁", 296, 128, 144, 13, 12, font12, bg);
-        ConfigureOption(opt13, "opt13", "代行SS区分情報2桁", 440, 128, 164, 14, 13, font12, bg);
+        ConfigureOption(opt10, "opt10", "用途情報2桁", 12, 128, 156, 11, 10, font12, bg);
+        ConfigureOption(opt11, "opt11", "燃料種類情報1桁", 172, 128, 152, 12, 11, font12, bg);
+        ConfigureOption(opt12, "opt12", "石油元売情報2桁", 328, 128, 150, 13, 12, font12, bg);
+        ConfigureOption(opt13, "opt13", "代行SS区分情報2桁", 482, 128, 168, 14, 13, font12, bg);
 
         // Row 5 (y = 160)
-        ConfigureOption(opt14, "opt14", "自販機機種情報2桁", 16, 160, 164, 15, 14, font12, bg);
+        ConfigureOption(opt14, "opt14", "自販機機種情報2桁", 12, 160, 170, 15, 14, font12, bg);
 
         // Row 6 (y = 192)
-        ConfigureOption(opt15, "opt15", "単位情報2桁", 16, 192, 128, 16, 15, font12, bg);
-        ConfigureOption(opt16, "opt16", "摘要情報3桁", 152, 192, 136, 34, 16, font12, bg);
-        ConfigureOption(opt17, "opt17", "事業所記号3桁", 296, 192, 144, 35, 17, font12, bg);
+        ConfigureOption(opt15, "opt15", "単位情報2桁", 12, 192, 156, 16, 15, font12, bg);
+        ConfigureOption(opt16, "opt16", "摘要情報3桁", 172, 192, 152, 34, 16, font12, bg);
+        ConfigureOption(opt17, "opt17", "事業所記号3桁", 328, 192, 150, 35, 17, font12, bg);
 
         // Input rows
         LblCD.BackColor = bg; LblCD.Font = font12; LblCD.Location = new System.Drawing.Point(32, 272); LblCD.Name = "LblCD"; LblCD.Size = new System.Drawing.Size(113, 19); LblCD.TabIndex = 29;
@@ -196,13 +196,13 @@ partial class FrmKUNO0110
         cmdOK.BackColor = System.Drawing.SystemColors.Control; cmdOK.Font = font14; cmdOK.Location = new System.Drawing.Point(32, 408); cmdOK.Name = "cmdOK"; cmdOK.Size = new System.Drawing.Size(81, 33); cmdOK.TabIndex = 21; cmdOK.Text = "設 定"; cmdOK.UseVisualStyleBackColor = false; cmdOK.Click += cmdOK_Click;
         cmdCAN.BackColor = System.Drawing.SystemColors.Control; cmdCAN.Font = font14; cmdCAN.Location = new System.Drawing.Point(136, 408); cmdCAN.Name = "cmdCAN"; cmdCAN.Size = new System.Drawing.Size(81, 33); cmdCAN.TabIndex = 22; cmdCAN.Text = "ｷｬﾝｾﾙ"; cmdCAN.UseVisualStyleBackColor = false; cmdCAN.Click += cmdCAN_Click;
         cmdDEL.BackColor = System.Drawing.SystemColors.Control; cmdDEL.Font = font14; cmdDEL.Location = new System.Drawing.Point(240, 408); cmdDEL.Name = "cmdDEL"; cmdDEL.Size = new System.Drawing.Size(81, 33); cmdDEL.TabIndex = 23; cmdDEL.Text = "削 除"; cmdDEL.UseVisualStyleBackColor = false; cmdDEL.Click += cmdDEL_Click;
-        cmdEND.BackColor = System.Drawing.SystemColors.Control; cmdEND.Font = font14; cmdEND.Location = new System.Drawing.Point(504, 408); cmdEND.Name = "cmdEND"; cmdEND.Size = new System.Drawing.Size(89, 33); cmdEND.TabIndex = 24; cmdEND.Text = "終 了"; cmdEND.UseVisualStyleBackColor = false; cmdEND.Click += cmdEND_Click;
+        cmdEND.BackColor = System.Drawing.SystemColors.Control; cmdEND.Font = font14; cmdEND.Location = new System.Drawing.Point(552, 408); cmdEND.Name = "cmdEND"; cmdEND.Size = new System.Drawing.Size(89, 33); cmdEND.TabIndex = 24; cmdEND.Text = "終 了"; cmdEND.UseVisualStyleBackColor = false; cmdEND.Click += cmdEND_Click;
 
         // FrmKUNO0110
         AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         BackColor = bg;
-        ClientSize = new System.Drawing.Size(625, 452);
+        ClientSize = new System.Drawing.Size(672, 452);
         ControlBox = false;
         Controls.AddRange(new System.Windows.Forms.Control[]
         {

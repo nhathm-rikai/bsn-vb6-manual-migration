@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{3180A32F-0431-4DF9-9DD7-081CF8F166FB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\kmbnrirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|c:\\users\\thuan.mai\\vb.net\\kousyoerp\\kousyoerp\\forms\\common\\frmsyoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\kousyoerp\\forms\\common\\frmsyoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|solutionrelative:kousyoerp\\forms\\common\\frmsyoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|solutionrelative:kousyoerp\\forms\\master\\frmkuno0010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|c:\\users\\thuan.mai\\vb.net\\kousyoerp\\kousyoerp\\forms\\master\\frmkuno0010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\kousyoerp\\forms\\master\\frmkuno0010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|solutionrelative:kousyoerp\\forms\\master\\frmkuno0010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -39,11 +39,11 @@
       "RelativeMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|solutionrelative:kousyoerp\\forms\\common\\frmmakken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|c:\\users\\thuan.mai\\vb.net\\kousyoerp\\kousyoerp\\forms\\common\\frmmakken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\kousyoerp\\forms\\common\\frmmakken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|solutionrelative:kousyoerp\\forms\\common\\frmmakken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|c:\\users\\thuan.mai\\vb.net\\kousyoerp\\kousyoerp\\forms\\common\\frmtaiken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\kousyoerp\\forms\\common\\frmtaiken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0981674-7E08-4C6B-A335-F8476E4C2ED9}|KousyoERP\\KousyoERP.csproj|solutionrelative:kousyoerp\\forms\\common\\frmtaiken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -124,7 +124,7 @@
               "RelativeDocumentMoniker": "Infrastructure\\Data\\OracleConnectionFactory.cs",
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\Infrastructure\\Data\\OracleConnectionFactory.cs",
               "RelativeToolTip": "Infrastructure\\Data\\OracleConnectionFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-16T08:31:55.557Z",
               "EditorCaption": ""
@@ -139,8 +139,7 @@
               "RelativeToolTip": "Infrastructure\\Data\\IDbConnectionFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-16T08:28:13.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-16T08:28:13.995Z"
             },
             {
               "$type": "Document",
@@ -151,8 +150,7 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\Common\\FrmSYOKEN.cs [Design]",
               "RelativeToolTip": "KousyoERP\\Forms\\Common\\FrmSYOKEN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T06:51:18.992Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-11T06:51:18.992Z"
             },
             {
               "$type": "Document",
@@ -163,8 +161,7 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\Master\\FrmKUNO0010.cs [Design]",
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0010.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T02:48:57.581Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-11T02:48:57.581Z"
             },
             {
               "$type": "Document",
@@ -175,21 +172,19 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\Master\\FrmKUNO0020.resx",
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0020.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-11-10T08:17:13.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T08:17:13.135Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "KousyoERP",
+              "Title": "KousyoERP.csproj",
               "DocumentMoniker": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\KousyoERP.csproj",
               "RelativeDocumentMoniker": "KousyoERP\\KousyoERP.csproj",
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\KousyoERP.csproj",
               "RelativeToolTip": "KousyoERP\\KousyoERP.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-10T08:17:12.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T08:17:12.992Z"
             },
             {
               "$type": "Document",
@@ -200,8 +195,7 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\FrmMainMenu.cs [Design]",
               "RelativeToolTip": "KousyoERP\\Forms\\FrmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:35:13.104Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-05T07:35:13.104Z"
             },
             {
               "$type": "Document",
@@ -213,8 +207,7 @@
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0010.cs",
               "ViewState": "AgIAAF8FAAAAAAAAAAAowGgFAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T06:30:37.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T06:30:37.376Z"
             },
             {
               "$type": "Document",
@@ -225,8 +218,7 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\Common\\FrmMAKKEN.cs [Design]",
               "RelativeToolTip": "KousyoERP\\Forms\\Common\\FrmMAKKEN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T02:56:46.951Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-11T02:56:46.951Z"
             },
             {
               "$type": "Document",
@@ -238,8 +230,7 @@
               "RelativeToolTip": "Infrastructure\\Repositories\\KmBnriRepository.cs",
               "ViewState": "AgIAABgAAAAAAAAAAADwvysAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:31:07.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:31:07.871Z"
             },
             {
               "$type": "Document",
@@ -251,8 +242,7 @@
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0010.Designer.cs",
               "ViewState": "AgIAAL4CAAAAAAAAAAAAAJUDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T02:49:45.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T02:49:45.625Z"
             },
             {
               "$type": "Document",
@@ -264,8 +254,7 @@
               "RelativeToolTip": "KousyoERP\\Forms\\Common\\FrmMAKKEN.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T02:56:53.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T02:56:53.775Z"
             },
             {
               "$type": "Document",
@@ -276,21 +265,19 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\Common\\FrmTAIKEN.cs [Design]",
               "RelativeToolTip": "KousyoERP\\Forms\\Common\\FrmTAIKEN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T02:56:50.387Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-11T02:56:50.387Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Infrastructure",
+              "Title": "Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\Infrastructure\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\Infrastructure\\Infrastructure.csproj",
               "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-10T08:17:12.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T08:17:12.184Z"
             },
             {
               "$type": "Document",
@@ -301,8 +288,7 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\Master\\FrmKUNO0020.cs [Design]",
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0020.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T08:19:02.409Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-05T08:19:02.409Z"
             },
             {
               "$type": "Document",
@@ -314,8 +300,7 @@
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0020.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T08:01:39.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T08:01:39.628Z"
             },
             {
               "$type": "Document",
@@ -327,8 +312,7 @@
               "RelativeToolTip": "KousyoERP\\Forms\\Master\\FrmKUNO0020.cs",
               "ViewState": "AgIAAAwDAAAAAAAAAAAcwD4DAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:30:47.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:30:47.01Z"
             },
             {
               "$type": "Document",
@@ -339,8 +323,7 @@
               "ToolTip": "C:\\Users\\thuan.mai\\VB.Net\\KousyoERP\\KousyoERP\\Forms\\FrmMainMenu.resx",
               "RelativeToolTip": "KousyoERP\\Forms\\FrmMainMenu.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-11-05T07:35:29.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:35:29.311Z"
             },
             {
               "$type": "Document",
@@ -376,8 +359,7 @@
               "RelativeToolTip": "KousyoERP\\Forms\\FrmMainMenu.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T07:35:26.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T07:35:26.691Z"
             },
             {
               "$type": "Document",
@@ -437,8 +419,7 @@
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-05T06:46:58.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-05T06:46:58.867Z"
             }
           ]
         },

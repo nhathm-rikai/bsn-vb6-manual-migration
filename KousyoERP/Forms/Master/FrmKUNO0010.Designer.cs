@@ -199,7 +199,7 @@ partial class FrmKUNO0010
         Frame2.Size = new Size(257, 41);
         Frame2.TabIndex = 24;
         Frame2.TabStop = false;
-        Frame2.Text = "åœ¨åº«åŒºåˆ†";
+        Frame2.Text = "在庫区分";
         // 
         // optYES
         // 
@@ -211,7 +211,7 @@ partial class FrmKUNO0010
         optYES.Name = "optYES";
         optYES.Size = new Size(52, 20);
         optYES.TabIndex = 26;
-        optYES.Text = "ã‚ã‚Š";
+        optYES.Text = "あり";
         optYES.UseVisualStyleBackColor = false;
         // 
         // optNO
@@ -224,7 +224,7 @@ partial class FrmKUNO0010
         optNO.Name = "optNO";
         optNO.Size = new Size(51, 20);
         optNO.TabIndex = 25;
-        optNO.Text = "ãªã—";
+        optNO.Text = "なし";
         optNO.UseVisualStyleBackColor = false;
         // 
         // txtISU
@@ -336,7 +336,7 @@ partial class FrmKUNO0010
         Frame1.Size = new Size(321, 41);
         Frame1.TabIndex = 12;
         Frame1.TabStop = false;
-        Frame1.Text = "æ¶ˆè²»ç¨ŽåŒºåˆ†";
+        Frame1.Text = "消費税区分";
         // 
         // optHI
         // 
@@ -348,7 +348,7 @@ partial class FrmKUNO0010
         optHI.Name = "optHI";
         optHI.Size = new Size(73, 20);
         optHI.TabIndex = 15;
-        optHI.Text = "éžèª²ç¨Ž";
+        optHI.Text = "非課税";
         optHI.UseVisualStyleBackColor = false;
         // 
         // optUTI
@@ -361,7 +361,7 @@ partial class FrmKUNO0010
         optUTI.Name = "optUTI";
         optUTI.Size = new Size(57, 20);
         optUTI.TabIndex = 14;
-        optUTI.Text = "å†…ç¨Ž";
+        optUTI.Text = "内税";
         optUTI.UseVisualStyleBackColor = false;
         // 
         // optSOTO
@@ -374,7 +374,7 @@ partial class FrmKUNO0010
         optSOTO.Name = "optSOTO";
         optSOTO.Size = new Size(57, 20);
         optSOTO.TabIndex = 13;
-        optSOTO.Text = "å¤–ç¨Ž";
+        optSOTO.Text = "外税";
         optSOTO.UseVisualStyleBackColor = false;
         // 
         // txtMCD
@@ -482,7 +482,7 @@ partial class FrmKUNO0010
         cmdEND.Name = "cmdEND";
         cmdEND.Size = new Size(73, 33);
         cmdEND.TabIndex = 31;
-        cmdEND.Text = "çµ‚ äº†";
+        cmdEND.Text = "終 了";
         cmdEND.UseVisualStyleBackColor = false;
         cmdEND.Click += cmdEND_Click;
         // 
@@ -495,7 +495,7 @@ partial class FrmKUNO0010
         cmdCAN.Name = "cmdCAN";
         cmdCAN.Size = new Size(73, 33);
         cmdCAN.TabIndex = 30;
-        cmdCAN.Text = "ï½·ï½¬ï¾ï½¾ï¾™";
+        cmdCAN.Text = "ｷｬﾝｾﾙ";
         cmdCAN.UseVisualStyleBackColor = false;
         cmdCAN.Click += cmdCAN_Click;
         // 
@@ -507,7 +507,7 @@ partial class FrmKUNO0010
         cmdOK.Name = "cmdOK";
         cmdOK.Size = new Size(73, 33);
         cmdOK.TabIndex = 29;
-        cmdOK.Text = "è¨­å®š";
+        cmdOK.Text = "設定";
         cmdOK.UseVisualStyleBackColor = false;
         cmdOK.Click += cmdOK_Click;
         // 
@@ -519,7 +519,7 @@ partial class FrmKUNO0010
         cmdDEL.Name = "cmdDEL";
         cmdDEL.Size = new Size(73, 33);
         cmdDEL.TabIndex = 3;
-        cmdDEL.Text = "å‰Š é™¤";
+        cmdDEL.Text = "削 除";
         cmdDEL.UseVisualStyleBackColor = false;
         cmdDEL.Click += cmdDEL_Click;
         // 
@@ -531,7 +531,7 @@ partial class FrmKUNO0010
         cmdSYU.Name = "cmdSYU";
         cmdSYU.Size = new Size(73, 33);
         cmdSYU.TabIndex = 2;
-        cmdSYU.Text = "ä¿® æ­£";
+        cmdSYU.Text = "修 正";
         cmdSYU.UseVisualStyleBackColor = false;
         cmdSYU.Click += cmdSYU_Click;
         // 
@@ -543,7 +543,7 @@ partial class FrmKUNO0010
         cmdTOU.Name = "cmdTOU";
         cmdTOU.Size = new Size(73, 33);
         cmdTOU.TabIndex = 1;
-        cmdTOU.Text = "ç™» éŒ²";
+        cmdTOU.Text = "登 録";
         cmdTOU.UseVisualStyleBackColor = false;
         cmdTOU.Click += cmdTOU_Click;
         // 
@@ -607,7 +607,7 @@ partial class FrmKUNO0010
         Label19.Name = "Label19";
         Label19.Size = new Size(178, 24);
         Label19.TabIndex = 50;
-        Label19.Text = "å•†å“ãƒžã‚¹ã‚¿ç™»éŒ²";
+        Label19.Text = "商品マスタ登録";
         // 
         // Label18
         // 
@@ -619,7 +619,7 @@ partial class FrmKUNO0010
         Label18.Name = "Label18";
         Label18.Size = new Size(39, 16);
         Label18.TabIndex = 49;
-        Label18.Text = "ç°¿ä¾¡";
+        Label18.Text = "簿価";
         // 
         // Label17
         // 
@@ -631,7 +631,7 @@ partial class FrmKUNO0010
         Label17.Name = "Label17";
         Label17.Size = new Size(71, 16);
         Label17.TabIndex = 48;
-        Label17.Text = "åœ¨åº«æ•°é‡";
+        Label17.Text = "在庫数量";
         // 
         // Label16
         // 
@@ -643,7 +643,7 @@ partial class FrmKUNO0010
         Label16.Name = "Label16";
         Label16.Size = new Size(39, 16);
         Label16.TabIndex = 47;
-        Label16.Text = "å…¥æ•°";
+        Label16.Text = "入数";
         // 
         // Label15
         // 
@@ -655,7 +655,7 @@ partial class FrmKUNO0010
         Label15.Name = "Label15";
         Label15.Size = new Size(39, 16);
         Label15.TabIndex = 46;
-        Label15.Text = "å˜ä½";
+        Label15.Text = "単位";
         // 
         // Label14
         // 
@@ -667,7 +667,7 @@ partial class FrmKUNO0010
         Label14.Name = "Label14";
         Label14.Size = new Size(135, 16);
         Label14.TabIndex = 45;
-        Label14.Text = "ä¸€èˆ¬å€‹äººè²©å£²å˜ä¾¡";
+        Label14.Text = "一般個人販売単価";
         // 
         // Label13
         // 
@@ -679,7 +679,7 @@ partial class FrmKUNO0010
         Label13.Name = "Label13";
         Label13.Size = new Size(135, 16);
         Label13.TabIndex = 44;
-        Label13.Text = "ä¸€èˆ¬ä¼æ¥­è²©å£²å˜ä¾¡";
+        Label13.Text = "一般企業販売単価";
         // 
         // Label12
         // 
@@ -691,7 +691,7 @@ partial class FrmKUNO0010
         Label12.Name = "Label12";
         Label12.Size = new Size(119, 16);
         Label12.TabIndex = 43;
-        Label12.Text = "å¾“æ¥­å“¡è²©å£²å˜ä¾¡";
+        Label12.Text = "従業員販売単価";
         // 
         // Label11
         // 
@@ -703,7 +703,7 @@ partial class FrmKUNO0010
         Label11.Name = "Label11";
         Label11.Size = new Size(118, 16);
         Label11.TabIndex = 42;
-        Label11.Text = "ï½¸ï¾žï¾™ï½°ï¾Œï¾Ÿè²©å£²å˜ä¾¡";
+        Label11.Text = "ｸﾞﾙｰﾌﾟ販売単価";
         // 
         // Label10
         // 
@@ -715,7 +715,7 @@ partial class FrmKUNO0010
         Label10.Name = "Label10";
         Label10.Size = new Size(71, 16);
         Label10.TabIndex = 41;
-        Label10.Text = "ä»•å…¥å˜ä¾¡";
+        Label10.Text = "仕入単価";
         // 
         // Label9
         // 
@@ -727,7 +727,7 @@ partial class FrmKUNO0010
         Label9.Name = "Label9";
         Label9.Size = new Size(103, 16);
         Label9.TabIndex = 40;
-        Label9.Text = "æ¨™æº–å°å£²ä¾¡æ ¼";
+        Label9.Text = "標準小売価格";
         // 
         // Label8
         // 
@@ -739,7 +739,7 @@ partial class FrmKUNO0010
         Label8.Name = "Label8";
         Label8.Size = new Size(101, 16);
         Label8.TabIndex = 39;
-        Label8.Text = "ãƒ¡ãƒ¼ã‚«ãƒ¼ã‚³ãƒ¼ãƒ‰";
+        Label8.Text = "メーカーコード";
         // 
         // Label7
         // 
@@ -751,7 +751,7 @@ partial class FrmKUNO0010
         Label7.Name = "Label7";
         Label7.Size = new Size(110, 16);
         Label7.TabIndex = 38;
-        Label7.Text = "ä»£è¡¨å•†å“ã‚³ãƒ¼ãƒ‰";
+        Label7.Text = "代表商品コード";
         // 
         // Label6
         // 
@@ -763,7 +763,7 @@ partial class FrmKUNO0010
         Label6.Name = "Label6";
         Label6.Size = new Size(94, 16);
         Label6.TabIndex = 37;
-        Label6.Text = "ä¸­åˆ†é¡žã‚³ãƒ¼ãƒ‰";
+        Label6.Text = "中分類コード";
         // 
         // Label5
         // 
@@ -775,7 +775,7 @@ partial class FrmKUNO0010
         Label5.Name = "Label5";
         Label5.Size = new Size(94, 16);
         Label5.TabIndex = 36;
-        Label5.Text = "å¤§åˆ†é¡žã‚³ãƒ¼ãƒ‰";
+        Label5.Text = "大分類コード";
         // 
         // Label4
         // 
@@ -787,7 +787,7 @@ partial class FrmKUNO0010
         Label4.Name = "Label4";
         Label4.Size = new Size(97, 16);
         Label4.TabIndex = 35;
-        Label4.Text = "å•†å“å(ç•¥ç§°)";
+        Label4.Text = "商品名(略称)";
         // 
         // Label3
         // 
@@ -799,7 +799,7 @@ partial class FrmKUNO0010
         Label3.Name = "Label3";
         Label3.Size = new Size(97, 16);
         Label3.TabIndex = 34;
-        Label3.Text = "å•†å“å(æ¼¢å­—)";
+        Label3.Text = "商品名(漢字)";
         // 
         // Label2
         // 
@@ -811,7 +811,7 @@ partial class FrmKUNO0010
         Label2.Name = "Label2";
         Label2.Size = new Size(93, 16);
         Label2.TabIndex = 33;
-        Label2.Text = "å•†å“å(ã‚«ãƒŠ)";
+        Label2.Text = "商品名(カナ)";
         // 
         // Label1
         // 
@@ -823,7 +823,7 @@ partial class FrmKUNO0010
         Label1.Name = "Label1";
         Label1.Size = new Size(78, 16);
         Label1.TabIndex = 32;
-        Label1.Text = "å•†å“ã‚³ãƒ¼ãƒ‰";
+        Label1.Text = "商品コード";
         // 
         // lblYMD
         // 

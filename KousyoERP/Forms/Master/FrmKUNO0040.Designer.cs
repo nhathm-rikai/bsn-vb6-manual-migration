@@ -342,7 +342,7 @@ partial class FrmKUNO0040
         txtKCD.BackColor = System.Drawing.Color.White; txtKCD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; txtKCD.Font = font12; txtKCD.ImeMode = System.Windows.Forms.ImeMode.Disable;
         txtKCD.Location = new System.Drawing.Point(120, 30); txtKCD.MaxLength = 10; txtKCD.Name = "txtKCD"; txtKCD.Size = new System.Drawing.Size(96, 22); txtKCD.TabIndex = 1;
         txtKCD.Enter += txtKCD_Enter; txtKCD.KeyDown += txtKCD_KeyDown; txtKCD.KeyPress += DigitsOnly_KeyPress; txtKCD.Leave += txtKCD_Leave;
-        cmdKYKKEN.BackColor = System.Drawing.SystemColors.Control; cmdKYKKEN.Location = new System.Drawing.Point(220, 30); cmdKYKKEN.Name = "cmdKYKKEN"; cmdKYKKEN.Size = new System.Drawing.Size(20, 22); cmdKYKKEN.TabStop = false; cmdKYKKEN.Text = "..."; cmdKYKKEN.UseVisualStyleBackColor = false;
+        cmdKYKKEN.BackColor = System.Drawing.SystemColors.Control; cmdKYKKEN.Location = new System.Drawing.Point(220, 30); cmdKYKKEN.Name = "cmdKYKKEN"; cmdKYKKEN.Size = new System.Drawing.Size(20, 22); cmdKYKKEN.TabStop = false; cmdKYKKEN.Text = ""; cmdKYKKEN.UseVisualStyleBackColor = false;
         cmdKYKKEN.Click += cmdKYKKEN_Click;
 
         // Frame3: 顧客区分
@@ -410,7 +410,7 @@ partial class FrmKUNO0040
         txtGKCD.BackColor = System.Drawing.Color.White; txtGKCD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; txtGKCD.Font = font12; txtGKCD.ImeMode = System.Windows.Forms.ImeMode.Disable;
         txtGKCD.Location = new System.Drawing.Point(120, 414); txtGKCD.MaxLength = 3; txtGKCD.Name = "txtGKCD"; txtGKCD.Size = new System.Drawing.Size(42, 22); txtGKCD.TabIndex = 17;
         txtGKCD.KeyDown += txtGKCD_KeyDown; txtGKCD.KeyPress += DigitsOnly_KeyPress; txtGKCD.Leave += txtGKCD_Leave;
-        cmdGPCD.BackColor = System.Drawing.SystemColors.Control; cmdGPCD.Location = new System.Drawing.Point(166, 414); cmdGPCD.Name = "cmdGPCD"; cmdGPCD.Size = new System.Drawing.Size(20, 22); cmdGPCD.TabStop = false; cmdGPCD.Text = "..."; cmdGPCD.UseVisualStyleBackColor = false;
+        cmdGPCD.BackColor = System.Drawing.SystemColors.Control; cmdGPCD.Location = new System.Drawing.Point(166, 414); cmdGPCD.Name = "cmdGPCD"; cmdGPCD.Size = new System.Drawing.Size(20, 22); cmdGPCD.TabStop = false; cmdGPCD.Text = ""; cmdGPCD.UseVisualStyleBackColor = false;
         cmdGPCD.Click += cmdGPCD_Click;
         lblGKCD.BackColor = bg; lblGKCD.Font = font12; lblGKCD.Location = new System.Drawing.Point(238, 418); lblGKCD.Name = "lblGKCD"; lblGKCD.Size = new System.Drawing.Size(196, 19);
 
@@ -424,7 +424,7 @@ partial class FrmKUNO0040
         txtSKCD.BackColor = System.Drawing.Color.White; txtSKCD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; txtSKCD.Font = font12; txtSKCD.ImeMode = System.Windows.Forms.ImeMode.Disable;
         txtSKCD.Location = new System.Drawing.Point(120, 478); txtSKCD.MaxLength = 10; txtSKCD.Name = "txtSKCD"; txtSKCD.Size = new System.Drawing.Size(92, 22); txtSKCD.TabIndex = 19;
         txtSKCD.KeyDown += txtSKCD_KeyDown; txtSKCD.KeyPress += DigitsOnly_KeyPress; txtSKCD.Leave += txtSKCD_Leave;
-        cmdKYKKEN2.BackColor = System.Drawing.SystemColors.Control; cmdKYKKEN2.Location = new System.Drawing.Point(214, 478); cmdKYKKEN2.Name = "cmdKYKKEN2"; cmdKYKKEN2.Size = new System.Drawing.Size(20, 22); cmdKYKKEN2.TabStop = false; cmdKYKKEN2.Text = "..."; cmdKYKKEN2.UseVisualStyleBackColor = false;
+        cmdKYKKEN2.BackColor = System.Drawing.SystemColors.Control; cmdKYKKEN2.Location = new System.Drawing.Point(214, 478); cmdKYKKEN2.Name = "cmdKYKKEN2"; cmdKYKKEN2.Size = new System.Drawing.Size(20, 22); cmdKYKKEN2.TabStop = false; cmdKYKKEN2.Text = ""; cmdKYKKEN2.UseVisualStyleBackColor = false;
         cmdKYKKEN2.Click += cmdKYKKEN2_Click;
         lblSKCD.BackColor = bg; lblSKCD.Font = font12; lblSKCD.Location = new System.Drawing.Point(238, 482); lblSKCD.Name = "lblSKCD"; lblSKCD.Size = new System.Drawing.Size(196, 19);
 
@@ -432,7 +432,7 @@ partial class FrmKUNO0040
         txtSSCD.BackColor = System.Drawing.Color.White; txtSSCD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle; txtSSCD.Font = font12; txtSSCD.ImeMode = System.Windows.Forms.ImeMode.Disable;
         txtSSCD.Location = new System.Drawing.Point(120, 510); txtSSCD.MaxLength = 10; txtSSCD.Name = "txtSSCD"; txtSSCD.Size = new System.Drawing.Size(92, 22); txtSSCD.TabIndex = 20;
         txtSSCD.KeyDown += txtSSCD_KeyDown; txtSSCD.KeyPress += DigitsOnly_KeyPress; txtSSCD.Leave += txtSSCD_Leave;
-        cmdKYKKEN3.BackColor = System.Drawing.SystemColors.Control; cmdKYKKEN3.Location = new System.Drawing.Point(214, 510); cmdKYKKEN3.Name = "cmdKYKKEN3"; cmdKYKKEN3.Size = new System.Drawing.Size(20, 22); cmdKYKKEN3.TabStop = false; cmdKYKKEN3.Text = "..."; cmdKYKKEN3.UseVisualStyleBackColor = false;
+        cmdKYKKEN3.BackColor = System.Drawing.SystemColors.Control; cmdKYKKEN3.Location = new System.Drawing.Point(214, 510); cmdKYKKEN3.Name = "cmdKYKKEN3"; cmdKYKKEN3.Size = new System.Drawing.Size(20, 22); cmdKYKKEN3.TabStop = false; cmdKYKKEN3.Text = ""; cmdKYKKEN3.UseVisualStyleBackColor = false;
         cmdKYKKEN3.Click += cmdKYKKEN3_Click;
         lblSSCD.BackColor = bg; lblSSCD.Font = font12; lblSSCD.Location = new System.Drawing.Point(238, 514); lblSSCD.Name = "lblSSCD"; lblSSCD.Size = new System.Drawing.Size(196, 19);
 
